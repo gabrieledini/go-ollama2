@@ -461,7 +461,7 @@ func main() {
 	// Configurazione
 	config := &Config{
 		OllamaURL:    "http://localhost:11434",
-		Model:        "mistral",
+		Model:        "robomotic/gemma-2-2b-neogenesis-ita",
 		ChunkSize:    300,
 		ChunkOverlap: 50,
 		TopK:         3,
@@ -471,7 +471,7 @@ func main() {
 	// Verifica argomenti
 	if len(os.Args) < 2 {
 		fmt.Println("❌ Uso: go run main.go <percorso_manuale.pdf>")
-		fmt.Println("Esempio: go run main.go ./manuale_tecnico.pdf")
+		fmt.Println("Esempio: go run main.go manuale.pdf")
 		os.Exit(1)
 	}
 
